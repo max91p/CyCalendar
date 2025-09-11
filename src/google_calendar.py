@@ -136,9 +136,9 @@ def get_event_color(summary):
     if any(term in summary.lower() for term in ['examen', 'rattrapage', 'rattrapages', 'partiel']):
         return event_colors['Sage']  # Vert pour les examens
     elif 'CM' in summary:
-        return event_colors['Peacock']  # Bleu pour les CM
+        return event_colors['Tomato']  # Rouge pour les CM
     elif 'TD' in summary:
-        return event_colors['Tomato']  # Rouge pour les TD
+        return event_colors['Blueberry']  # Blue pour les TD
     elif 'TP' in summary:
         return event_colors['Tangerine']  # Orange pour les TP
     return event_colors['Graphite']  # Couleur par défaut
